@@ -2,12 +2,12 @@
 
 return [
     'plugin' => [
-        'name' => 'Redirects',
+        'name' => 'Simple Redirects',
         'description' => 'Verwalte eigene Weiterleitungen und erzwinge HTTPS / (Non-)WWW Anfragen.'
     ],
     
     'menu' => [
-        'name' => 'Redirects',
+        'name' => 'Weiterleitungen',
         'description' => 'Verwalte deine Weiterleitungehn und HTTPS / (Non-)WWW Anfragen.'
     ],
 

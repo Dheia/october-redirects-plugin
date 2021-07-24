@@ -2,7 +2,7 @@
 
 return [
     'plugin' => [
-        'name' => 'Redirects',
+        'name' => 'Simple Redirects',
         'description' => 'Manage custom redirections and force HTTPS / (Non-)WWW location requests.'
     ],
     
