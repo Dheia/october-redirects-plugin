@@ -1,7 +1,7 @@
-Custom Redirects & HTTPs / (Non-)WWW Plugin
-===========================================
+Custom Redirects Plugin
+=======================
 
-Synder.Redirects is a simple OctoberCMS extension, which handles custom redirects and force HTTPs 
+**Synder.Redirects** is a simple OctoberCMS extension handling custom redirects and force HTTPs 
 and (Non-)WWW frontend requests, which is also a benefit for your SEO rankings on Google and Bing.
 
 
