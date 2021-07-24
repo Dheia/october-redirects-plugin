@@ -1,0 +1,27 @@
+{
+    "name": "synder/redirects",
+    "type": "october-plugin",
+    "description": "Simple manage custom redirections and force HTTPS / (Non-)WWW location requests.",
+    "homepage": "https://octobercms.com/plugin/synder-redirects",
+    "keywords": [
+        "october", 
+        "october-plugin", 
+        "redirects",
+        "redirections",
+        "force-https",
+        "force-www",
+        "everywhere",
+        "synder"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Synder",
+            "email": "october@synder.dev",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.2"
+    }
+}

@@ -1,0 +1,87 @@
+
+@keyframes fa-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(359deg);
+    }
+ }
+
+.synder-https-test {
+    padding: 0;
+    display: flex;
+}
+
+.synder-test-results ul {
+    margin: 0;
+    padding: 0;
+    display: block;
+    list-style: none;
+}
+.synder-test-results li {
+    margin: 0 0 10px 0;
+    padding: 0;
+    display: flex;
+    position: relative;
+}
+.synder-test-results li .status {
+    top: 0.14285714em;
+    left: -2.14285714em;
+    width: 2.14285714em;
+    position: absolute;
+    text-align: center;
+}
+.synder-test-results li .status:before {
+    display: inline-block;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-family: FontAwesome;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased;
+}
+.synder-test-results li[data-status="pending"] .status:before {
+    color: #656d79;
+    content: "\f1ce";
+    animation: fa-spin 2s infinite linear;
+}
+.synder-test-results li[data-status="success"] .status:before {
+    color: #3c763d;
+    content: "\f00c";
+}
+.synder-test-results li[data-status="error"] .status:before {
+    color: #a94442;
+    content: "\f00d";
+}
+.synder-test-results li[data-status="canceled"] .status:before {
+    color: #a94442;
+    content: "\f06a";
+}
+
+.synder-test-results li .status-text {
+    padding: 4px 10px;
+}
+.synder-test-results li .status-text div {
+    color: #98a0a0;
+    font-weight: 700;
+}
+.synder-test-results li[data-status="pending"] .status-text div {
+    color: #333;
+}
+.synder-test-results li .status-text span {
+    padding-left: 10px;
+}
+.synder-test-results li[data-status="pending"] .status-text span {
+    color: #656d79;
+    font-style: italic;
+}
+.synder-test-results li[data-status="success"] .status-text span {
+    color: #3c763d;
+}
+.synder-test-results li[data-status="error"] .status-text span {
+    color: #a94442;
+}
+.synder-test-results li[data-status="canceled"] .status-text span {
+    color: #a94442;
+}

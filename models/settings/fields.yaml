@@ -1,0 +1,119 @@
+tabs: 
+  stretch: true
+  defaultTab: synder.redirects::lang.config.tabs.redirects
+  fields:
+    custom_redirects:
+      tab: synder.redirects::lang.config.tabs.redirects
+      type: repeater
+      prompt: synder.redirects::lang.config.redirects.prompt
+      form:
+        fields:
+          source:
+            label: synder.redirects::lang.config.redirects.source
+            type: text
+            placeholder: /old/source
+            span: row
+            spanClass: col-xs-12 col-md-6 col-lg-5
+          status_code:
+            label: synder.redirects::lang.config.redirects.status
+            type: dropdown
+            default: 302
+            options:
+              300: 300 Multiple Chose
+              301: 301 Permanently
+              302: 302 Found
+              303: 303 See Other
+              307: 307 Temporary Redirect
+              308: 308 Permanent Redirect
+            showSearch: false
+            span: row
+            spanClass: col-xs-12 col-md-6 col-lg-2
+          destination:
+            label: synder.redirects::lang.config.redirects.destination
+            type: text
+            placeholder: /new/destination
+            span: row
+            spanClass: col-xs-12 col-md-6 col-lg-5
+          get_mode:
+            type: switch
+            label: synder.redirects::lang.config.redirects.get
+            span: row
+            spanClass: col-xs-12
+
+    https_section:
+      tab: synder.redirects::lang.config.tabs.force
+      type: section
+      label: synder.redirects::lang.config.force.section_https
+    https_force:
+      tab: synder.redirects::lang.config.tabs.force
+      type: switch
+      label: synder.redirects::lang.config.force.https_force
+      comment: synder.redirects::lang.config.force.https_force_desc
+      span: row
+      spanClass: col-xs-12 col-md-6 col-lg-4
+    http_get_mode:
+      tab: synder.redirects::lang.config.tabs.force
+      type: switch
+      label: synder.redirects::lang.config.force.http_get_mode
+      comment: synder.redirects::lang.config.force.http_get_mode_desc
+      span: row
+      spanClass: col-xs-12 col-md-6 col-lg-4
+    https_status_code:
+      tab: synder.redirects::lang.config.tabs.force
+      type: dropdown
+      comment: synder.redirects::lang.config.force.status_code_desc 
+      default: 301
+      options:
+        300: 300 Multiple Chose
+        301: 301 Permanently
+        302: 302 Found
+        303: 303 See Other
+        307: 307 Temporary Redirect
+        308: 308 Permanent Redirect
+      showSearch: false
+      span: row
+      spanClass: col-xs-12 col-md-6 col-lg-4
+
+    www_section:
+      tab: synder.redirects::lang.config.tabs.force
+      type: section
+      label: synder.redirects::lang.config.force.section_www
+    www_force:
+      tab: synder.redirects::lang.config.tabs.force
+      type: switch
+      label: synder.redirects::lang.config.force.www_force
+      comment: synder.redirects::lang.config.force.www_force_desc
+      span: row
+      spanClass: col-xs-12 col-md-6 col-lg-4
+    www_mode:
+      tab: synder.redirects::lang.config.tabs.force
+      type: switch
+      label: synder.redirects::lang.config.force.www_mode
+      comment: synder.redirects::lang.config.force.www_mode_desc
+      span: row
+      spanClass: col-xs-12 col-md-6 col-lg-4
+    www_status_code:
+      tab: synder.redirects::lang.config.tabs.force
+      type: dropdown
+      comment: synder.redirects::lang.config.force.status_code_desc 
+      default: 301
+      options:
+        300: 300 Multiple Chose
+        301: 301 Permanently
+        302: 302 Found
+        303: 303 See Other
+        307: 307 Temporary Redirect
+        308: 308 Permanent Redirect
+      showSearch: false
+      span: row
+      spanClass: col-xs-12 col-md-6 col-lg-4
+    
+    test_section:
+      tab: synder.redirects::lang.config.tabs.force
+      type: section
+      label: synder.redirects::lang.config.force.section_test
+    https_test:
+      tab: synder.redirects::lang.config.tabs.force
+      type: synder-httpstest
+      span: row
+      spanClass: col-xs-12 col-md-6 col-lg-4
